@@ -2,11 +2,10 @@
 
 
 angular.module('myApp', ['ngAnimate','ngCookies','ngResource', 'ngRoute', 'ngSanitize', 'ngTouch','ui.bootstrap' ])
-
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/index.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
