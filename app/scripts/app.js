@@ -1,22 +1,8 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name blogApp
- * @description
- * # blogApp
- *
- * Main module of the application.
- */
-angular
-  .module('blogApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-  ])
+
+angular.module('myApp', ['ngAnimate','ngCookies','ngResource', 'ngRoute', 'ngSanitize', 'ngTouch','ui.bootstrap' ])
+
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -27,4 +13,5 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+
   });
